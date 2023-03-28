@@ -1,6 +1,5 @@
 window.addEventListener("load", function(){
     const inputs = this.document.querySelectorAll("form input");
-    
     const xInput = inputs[0];
     const yInput = inputs[1];
     const resetButton = inputs[2];
@@ -13,14 +12,12 @@ window.addEventListener("load", function(){
 
     console.log(resultSpan);
 
-
     resetButton.onClick = (e)=>{
         e.preventDefault();
         xInput.value = 0;
         yInput.value = 0;
         resultSpan.innerText = 0;
     }; 
-
 
     submitButton.onClick = (e)=>{
         e.preventDefault();
@@ -43,6 +40,5 @@ window.addEventListener("load", function(){
         let result = x + y;
         resultSpan.innerText = result;
     };
-
 
 });
